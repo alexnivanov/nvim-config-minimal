@@ -2,7 +2,6 @@ require('guard').setup()
 
 local ft = require('guard.filetype')
 
--- use clang-format and clang-tidy for C files
 ft('c'):fmt('clang-format')
     :lint('clang-tidy')
 
